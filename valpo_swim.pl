@@ -81,6 +81,6 @@ free(drew_wilson).
 
 same_stroke(X, Y) :- (fly(X), fly(Y)); (back(X), back(Y)); (breast(X), breast(Y)); (free(X), free(Y)); (medley(X), medley(Y)); (distance(X), distance(Y)).
 
-same_year(X, Y) :- (freshman(X), freshman(Y)); (sophomore(X), sophomore(Y)); (junior(X), junior(Y)); (senior(X), senior(Y).
+same_year(X, Y) :- (freshman(X), freshman(Y)); (sophomore(X), sophomore(Y)); (junior(X), junior(Y)); (senior(X), senior(Y)).
 
 best_friends(X, Y) :- same_year(X, Y), same_stroke(X, Y).
